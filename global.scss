@@ -337,6 +337,7 @@ section.work--sample {
     }
 
     .plyr__video-embed {
+      position: relative;
       left: auto;
       right: auto;
       width: 100%;
@@ -345,6 +346,7 @@ section.work--sample {
       iframe {
         width: 100%;
         min-height: var(--minHeight);
+        min-width: var(--minWidth);
       }
     }
 
