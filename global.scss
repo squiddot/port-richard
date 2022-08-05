@@ -144,6 +144,7 @@ h1 {
   font-size: clamp(2rem, calc(8vw - 2rem), 3.5rem);
   line-height: clamp(2.625rem, calc(10vw - 2rem), 4.125rem);
   margin-bottom: clamp(2rem, calc(8vw - 2rem), 4rem);
+  max-width: 24ch;
 
   section.content & {
     margin-bottom: clamp(2rem, calc(8vw - 2rem), 4rem);
@@ -167,6 +168,7 @@ p {
   line-height: clamp(1.625rem, calc(10vw - 2rem), 2.5rem);
   font-weight: 300;
   letter-spacing: 0.1rem;
+  max-width: 75ch;;
 
   &.large {
     // font-size: 2rem;
@@ -208,6 +210,31 @@ p {
   .nuxt-content & {
     max-width: 85ch;
   }
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 2rem;
+
+  & + * {
+    margin-block-start: 12rem;
+  }
+  
+  li {
+    font-size: clamp(1rem, calc(8vw - 2rem), 1.25em);
+    line-height: clamp(1.625rem, calc(10vw - 2rem), 2.25rem);
+    color: white;
+    padding: 0.5rem;
+
+    &::marker {
+      display: inline-block;
+        content: "-";
+        color: pink;
+      }
+
+  }
+
+  
 }
 
 section.content h1 a {
