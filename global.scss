@@ -65,6 +65,18 @@ body {
 }
 
 
+.hi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 219px;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  cursor: none;
+}
+
 .main--wrapper {
   position: relative;
   min-height: 100vh;
@@ -149,6 +161,13 @@ h1 {
   section.content & {
     margin-bottom: clamp(2rem, calc(8vw - 2rem), 4rem);
   }
+
+  span {
+    &:hover {
+cursor: url(/assets/hi.jpg), auto;
+    }
+    
+  }
 }
 
 h2 {
@@ -158,6 +177,25 @@ h2 {
   font-size: clamp(2rem, calc(8vw - 2rem), 3rem);
   line-height: clamp(2.125rem, calc(10vw - 2rem), 4.125rem);
   margin-bottom: clamp(1.5rem, calc(8vw - 2rem), 2rem);
+}
+
+a.cta {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  border-bottom: 1px solid cyan;
+  padding-bottom: 0.25rem;
+  transition: $transition;
+  margin-bottom: 2rem;
+
+  &:hover {
+    border-bottom: 1px solid pink;
+  }
+
+  &:visited {
+    color: white;
+  }
 }
 
 p {
@@ -210,7 +248,7 @@ p {
   .nuxt-content & {
     max-width: 85ch;
   }
-}
+} 
 
 ul {
   list-style: none;
