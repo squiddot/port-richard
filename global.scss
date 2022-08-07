@@ -15,6 +15,10 @@ $accent-font: 'overpass mono', monospace;
   --plyr-color-main: #00ffcc;
 }
 
+::selection {
+  background: pink;
+}
+
 html {
   width: 100%;
   max-width: 100vw;
@@ -164,7 +168,7 @@ h1 {
 
   span {
     &:hover {
-cursor: url(/assets/hi.jpg), auto;
+cursor: se-resize;
     }
     
   }
