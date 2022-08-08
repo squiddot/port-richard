@@ -6,7 +6,8 @@ gsap.registerPlugin(ScrollTrigger);
 const currentDate = new Date().getFullYear();
 document.querySelector('footer span').innerHTML = currentDate
 
-const players = Array.from(document.querySelectorAll('.plyr__video-embed')).map((p) => new Plyr(p, { controls: ['play-large'], ratio: "h:w" } ));
+const players = Array.from(document.querySelectorAll('.plyr__video-embed')).map((p) => new Plyr(p, { controls: ['play-large'], ratio: "w:h" } ));
+const playersWithAudio = Array.from(document.querySelectorAll('.plyr__audio')).map((p) => new Plyr(p, { controls: ['play-large', 'volume'], ratio: "h:w", volume: 0.25 } ));
 
 gsap.set(".hi", { xPercent: 10, yPercent: 0 });
 const cur = document.querySelector(".hi");
