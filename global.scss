@@ -142,15 +142,21 @@ header {
   // padding: 0 2rem;
   padding: 2rem 0 0;
   align-items: center;
+  height: auto;
 
   @media (min-width: 64rem) {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
 footer {
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+.scroll {
+  outline: 10px solid pink;
+  // display: block;
 }
 
 h1 {
@@ -333,6 +339,7 @@ section#work .container > * + *:not(:first-of-type) {
 }
 
 section.work--sample {
+  position: relative;
   display: flex;
   flex-direction: column;
 
