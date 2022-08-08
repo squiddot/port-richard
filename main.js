@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: elem,
       // start: "top bottom",
       // end: "top bottom",
-      markers: true,
+      markers: false,
       onEnter: function () { animateFrom(elem) },
       onEnterBack: function () { animateFrom(elem, -1) },
       onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view

@@ -33,40 +33,40 @@ body {
   
 }
 
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-}
+// .page-enter-active,
+// .page-leave-active {
+//   transition: opacity 0.5s;
+// }
+// .page-enter,
+// .page-leave-to {
+//   opacity: 0;
+// }
 
-.home-enter-active,
-.home-leave-active {
-  transition: opacity 0.5s;
-}
-.home-enter,
-.home-leave-active {
-  opacity: 0;
-}
+// .home-enter-active,
+// .home-leave-active {
+//   transition: opacity 0.5s;
+// }
+// .home-enter,
+// .home-leave-active {
+//   opacity: 0;
+// }
 
-.layout-enter-active,
-.layout-leave-active {
-  transition: opacity 0.5s;
-}
-.layout-enter,
-.layout-leave-active {
-  opacity: 0;
-}
+// .layout-enter-active,
+// .layout-leave-active {
+//   transition: opacity 0.5s;
+// }
+// .layout-enter,
+// .layout-leave-active {
+//   opacity: 0;
+// }
 
-#__nuxt, #__layout {
-  height: auto;
-  min-height: 100%;
-  width: 100%;
-  max-width: 100vw;
-  position: relative;
-}
+// #__nuxt, #__layout {
+//   height: auto;
+//   min-height: 100%;
+//   width: 100%;
+//   max-width: 100vw;
+//   position: relative;
+// }
 
 
 .hi {
@@ -114,7 +114,9 @@ footer,
   align-items: baseline;
   z-index: 0;
   width: 100%;
-  max-width: 100%;
+  max-width: 2500px;
+  justify-content: center;
+  margin: 0 auto;
 
   @media (min-width: 1024px) {
     grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
@@ -155,8 +157,7 @@ footer {
 }
 
 .scroll {
-  outline: 10px solid pink;
-  // display: block;
+  // outline: 10px solid pink;
 }
 
 h1 {
