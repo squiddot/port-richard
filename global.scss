@@ -2,6 +2,15 @@ $ease: cubic-bezier(0.77, 0, 0.175, 1);
 $transition: all $ease 0.25s;
 $body-font: 'Inter', sans-serif;
 $accent-font: 'overpass mono', monospace;
+$light-color-1: #BFFF40;
+$light-color-2: #ff1654;
+$light-background: #ffffff;
+$dark-color-1: #5A189A;
+$dark-color-2: #4Cc9f0;
+$dark-background: #000000;
+$color-1: $light-color-1;
+$color-2: $dark-color-2;
+
 
 *,
 *::before,
@@ -16,7 +25,7 @@ $accent-font: 'overpass mono', monospace;
 }
 
 ::selection {
-  background: pink;
+  background: $color-1;
 }
 
 html {
@@ -157,7 +166,7 @@ footer {
 }
 
 .scroll {
-  // outline: 10px solid pink;
+  // outline: 10px solid $color-1;
 }
 
 h1 {
@@ -195,13 +204,13 @@ a.cta {
   color: white;
   text-decoration: none;
   font-weight: 100;
-  border-bottom: 1px solid cyan;
+  border-bottom: 1px solid $color-2;
   padding-bottom: 0.25rem;
   transition: $transition;
   margin-bottom: 2rem;
 
   &:hover {
-    border-bottom: 1px solid pink;
+    border-bottom: 1px solid $color-1;
   }
 
   &:visited {
@@ -243,12 +252,12 @@ p {
     color: white;
     text-decoration: none;
     font-weight: 100;
-    border-bottom: 1px solid cyan;
+    border-bottom: 1px solid $color-2;
     padding-bottom: 0.25rem;
     transition: $transition;
 
     &:hover {
-      border-bottom: 2px solid pink;
+      border-bottom: 2px solid $color-1;
     }
 
     &:visited {
@@ -278,7 +287,7 @@ ul {
     &::marker {
       display: inline-block;
         content: "-";
-        color: pink;
+        color: $color-1;
       }
 
   }
@@ -543,12 +552,12 @@ small {
         color: white;
         text-decoration: none;
         font-weight: 100;
-        border-bottom: 1px solid cyan;
+        border-bottom: 1px solid $color-2;
         padding-bottom: 0.25rem;
         transition: $transition;
     
         &:hover {
-          border-bottom: 2px solid pink;
+          border-bottom: 2px solid $color-1;
         }
     
         &:visited {
